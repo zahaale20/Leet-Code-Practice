@@ -1,0 +1,20 @@
+//Buy and sell stocks to calculate the maximum profit
+public class StockPrices {
+
+	public static void main(String[] args) {
+		int[] prices = {7,6,4,3,1};
+		System.out.println(maxProfit(prices));
+
+	}
+	
+	public static int maxProfit(int[] prices) {
+        int res = 0;
+        for(int i = 0; i <= prices.length - 2; i++) {
+        	if (prices[i] < prices[i+1]) {
+        		res += prices[i+1] - prices[i];
+        	}
+        }
+        return res;
+    }
+
+}
