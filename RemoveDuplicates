@@ -1,3 +1,4 @@
+// Removes duplicates from a sorted array. Returns the length of the array (k) while modifying the input array.
 import java.util.Arrays;
 
 public class RemoveDuplicates {
